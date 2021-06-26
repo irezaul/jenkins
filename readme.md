@@ -34,5 +34,38 @@ brew services stop jenkins-lts
 brew services status jenkins-lts   
 ```
 
+# Install to Ubuntu
+
+#### 1st step
+``` bash 
+sudo apt-get update
+```
+####  added the repository key to the system:
+``` bash
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+```
+#### added debian package repository address :
+``` bash
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+```
+#### update apt :
+```bash
+sudo apt update
+```
+#### Finally install Jenkins -
+```bash
+sudo apt install jenkins
+```
+
+#### Now start, status & stop alos working -
+``` bash
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+sudo systemctl stop jenkins
+```
+
+
+
+
 
 [MASTER-ACADEMY](https://master.com.bd/)
