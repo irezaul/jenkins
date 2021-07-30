@@ -67,7 +67,7 @@ sudo systemctl stop jenkins
 If you need any question & need to added somthing please info me....
 [rezaulkarim](fb.com/mtmartbd)
 
-## How to create a Node 
+## How to added a agent 
 
 
 [MASTER-ACADEMY](https://master.com.bd/) 
