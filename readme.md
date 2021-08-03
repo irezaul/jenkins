@@ -68,9 +68,43 @@ If you need any question & need to added somthing please info me....
 [rezaulkarim](fb.com/mtmartbd)
 
 ## How to added a agent -
+##### Go Jenkins Dashboard click to `Nodes` then click to `New Nodes`
+
+![Jenkins nodes](https://user-images.githubusercontent.com/77927449/128058427-d86b9ce0-6e8f-4141-b2dc-5ebaa8926e6e.png)
+
+##### click on add node & next show this screen & copy the `agent.jar` link..
+
+![node_link](https://user-images.githubusercontent.com/77927449/128058940-cecb3668-46e6-4f78-87fe-ae3bbc5fe18c.png)
+
+![agent jar_](https://user-images.githubusercontent.com/77927449/128059185-9b59b625-90de-402c-a7ac-32d4e0def20f.png)
+
+#### now go to Host Machine & download `Agent.jar`
+##### go to the home directory & download it by command-
+
+```bash
+wget http://192.168.1.11:8080/jnlpJars/agent.jar
+```
+![agent_file](https://user-images.githubusercontent.com/77927449/128060376-4162abf4-a471-4e9d-98f7-29d90c22a3c0.jpeg)
+
+#### then run the command which jenkins give to you when added node.
+
+![node_link](https://user-images.githubusercontent.com/77927449/128058940-cecb3668-46e6-4f78-87fe-ae3bbc5fe18c.png)
+
+### Example-
+```bash
+java -jar agent.jar -jnlpUrl http://192.168.1.11:8080/computer/agent1/jenkins-agent.jnlp -secret a7c38d66f03fe6be49aa7484b4a1f5acbd662db3acc92bfc51abc813f9e0bd3c -workDir "/home/"
+```
+#### Now your node ready -
+
+![node-added](https://user-images.githubusercontent.com/77927449/128060468-75f3513c-d440-4845-b637-83280bc75110.jpeg)
+
+
+
 
 
 [MASTER-ACADEMY](https://master.com.bd/) 
 join here [codingbootcamp](fb.com/groups/codingbootcampbd)
+
+
 
 
